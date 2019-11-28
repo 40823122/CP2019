@@ -13,3 +13,4 @@ void main(){
 			print('C=$C2');
   }
   print('x=0,1切換(華氏、攝氏)');
+  }
