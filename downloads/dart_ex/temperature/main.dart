@@ -1,5 +1,4 @@
-main(){
-   int x = 0;
+int x = 0;
 num F = 86;
 num C = 30;
 
@@ -14,4 +13,3 @@ void main(){
 			print('C=$C2');
   }
   print('x=0,1切換(華氏、攝氏)');
-}
