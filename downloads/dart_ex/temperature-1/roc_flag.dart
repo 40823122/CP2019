@@ -1,7 +1,4 @@
 /*
-將 Dart 程式存在倉儲中特定目錄下, 然後以 Dartpad.github.io 呼叫的好處是, 程式開發者可以隨時在 Github 網際環境中編輯改版程式, 之後在近端改版時, 
-可以將程式以 git pull 的方式拉到近端合併.
-/*
 void main() {
  print("Hello, World!");
 }
