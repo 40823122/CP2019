@@ -5,56 +5,78 @@ CanvasElement canvas;
 CanvasRenderingContext2D ctx;
 int flag_w = 300;
 int flag_h = 200;
-num circle_x = flag_w / 4;
-num circle_y = flag_h / 4;
+int flag_w1 = 300;
+int flag_h1 = 150;
+num circle_x = flag_w / 2;
+num circle_y = flag_h / 2;
+num circle_a = flag_w / 4;
+num circle_b = flag_h / 4;
 
 void main() {
   canvas = querySelector('#canvas');
   ctx = canvas.getContext('2d');
 
+ 
 
-  querySelector("#usa").onClick.listen((e) => drawUSA(ctx));
+  querySelector("#uk").onClick.listen((e) => drawUK(ctx));
   querySelector("#button").onClick.listen((e) => clearCanvas());
 }
-
-void drawUSA(ctx){
-
+void drawUK(ctx){
   ctx.clearRect(0, 0, flag_w, flag_h);
-  ctx.fillStyle = 'rgb(255, 0, 0)';
-  ctx.fillRect(0, 0, flag_w, flag_h);
-  ctx.fillStyle = 'rgb(255, 255, 255)';
-  ctx.fillRect(0, 15.4, flag_w / 1, flag_h / 13);
-  ctx.fillStyle = 'rgb(255, 255, 255)';
-  ctx.fillRect(0, 46.2, flag_w / 1, flag_h / 13);
-  ctx.fillStyle = 'rgb(255, 255, 255)';
-  ctx.fillRect(0, 77.2, flag_w / 1, flag_h / 13);
-  ctx.fillStyle = 'rgb(255, 255, 255)';
-  ctx.fillRect(0, 108.0, flag_w / 1, flag_h / 13);
-  ctx.fillStyle = 'rgb(255, 255, 255)';
-  ctx.fillRect(0, 138.8, flag_w / 1, flag_h / 13);
-  ctx.fillStyle = 'rgb(255, 255, 255)';
-  ctx.fillRect(0, 169.6, flag_w / 1, flag_h / 13);
-  ctx.fillStyle = 'rgb(255, 255, 255)';
-  ctx.fillRect(0, 200.4, flag_w / 1, flag_h / 13);
-  ctx.fillStyle = 'rgb(0, 0, 150)';
-  ctx.fillRect(0, 0, flag_w / 2, flag_h / 1.9);
-    num b = flag_h/18;
-  ctx.font = "10px Arial";
-  ctx.strokeStyle = 'rgb(255, 255, 255)';
-  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36,12);
-  ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*2);
-  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*3);
-  ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*4);
-  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*5);
-  ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*6);
-  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*7);
-   ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*8);
-   ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*9);
-
-
+  ctx.fillStyle = '#001b69';
+  ctx.fillRect(0, 0, flag_w1, flag_h1);
+    ctx.strokeStyle="#fff";
+  ctx.lineWidth = 30;
+    ctx.beginPath();
+    ctx.moveTo(0,0);
+    ctx.lineTo(300,150);
+    ctx.moveTo(0,150);
+    ctx.lineTo(300,0);
+  ctx.stroke();
+  ctx.strokeStyle="#c9072a";
+  ctx.lineWidth = 10;
+  ctx.beginPath();
+  ctx.moveTo(0,155);
+  ctx.lineTo(150,80);
+  ctx.stroke();
+  ctx.strokeStyle="#c9072a";
+  ctx.lineWidth = 10;
+  ctx.beginPath();
+  ctx.moveTo(150,70);
+  ctx.lineTo(295,-5);
+  ctx.stroke();
+  ctx.strokeStyle="#c9072a";
+  ctx.lineWidth = 10;
+  ctx.beginPath();
+  ctx.moveTo(150,70);
+  ctx.lineTo(305,145);
+  ctx.stroke();
+  ctx.strokeStyle="#c9072a";
+  ctx.lineWidth = 10;
+  ctx.beginPath();
+  ctx.moveTo(150,80);
+  ctx.lineTo(-5,5);
+  ctx.stroke();
+  ctx.strokeStyle="#fff";
+  ctx.lineWidth = 50;
+    ctx.beginPath();
+    ctx.moveTo(0,75);
+    ctx.lineTo(300,75);
+    ctx.moveTo(150,0);
+    ctx.lineTo(150,150);
+    ctx.stroke();
+  ctx.strokeStyle="#c9072a";
+  ctx.lineWidth = 30;
+    ctx.beginPath();
+    ctx.moveTo(0,75);
+    ctx.lineTo(300,75);
+    ctx.moveTo(150,0);
+    ctx.lineTo(150,150);
+    ctx.stroke();
+    ctx.fillStyle = '#fff';
+  ctx.fillRect(0, 150, flag_w, flag_h/4);
+  
 }
-
-
 void clearCanvas(){
   ctx.clearRect(0, 0, flag_w, flag_h);
 }
