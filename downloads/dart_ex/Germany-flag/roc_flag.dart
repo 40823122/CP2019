@@ -14,7 +14,6 @@ void main() {
 
   drawROC(ctx);
   querySelector("#roc").onClick.listen((e) => drawROC(ctx));
-  querySelector("#usa").onClick.listen((e) => drawUSA(ctx));
   querySelector("#button").onClick.listen((e) => clearCanvas());
 }
 
