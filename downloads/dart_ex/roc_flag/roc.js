@@ -2185,12 +2185,9 @@
       t2 = J.get$onClick$x(t1.querySelector("#roc"));
       t3 = H.getTypeArgumentByIndex(t2, 0);
       W._EventStreamSubscription$(t2._target, t2._eventType, H.functionTypeCheck(new Y.main_closure(), {func: 1, ret: -1, args: [t3]}), false, t3);
-      t3 = J.get$onClick$x(t1.querySelector("#usa"));
-      t2 = H.getTypeArgumentByIndex(t3, 0);
-      W._EventStreamSubscription$(t3._target, t3._eventType, H.functionTypeCheck(new Y.main_closure0(), {func: 1, ret: -1, args: [t2]}), false, t2);
       t1 = J.get$onClick$x(t1.querySelector("#button"));
-      t2 = H.getTypeArgumentByIndex(t1, 0);
-      W._EventStreamSubscription$(t1._target, t1._eventType, H.functionTypeCheck(new Y.main_closure1(), {func: 1, ret: -1, args: [t2]}), false, t2);
+      t3 = H.getTypeArgumentByIndex(t1, 0);
+      W._EventStreamSubscription$(t1._target, t1._eventType, H.functionTypeCheck(new Y.main_closure0(), {func: 1, ret: -1, args: [t3]}), false, t3);
     },
     drawROC: function(ctx) {
       var angle, i, t1, t2, toX, toY;
@@ -2234,8 +2231,6 @@
     main_closure: function main_closure() {
     },
     main_closure0: function main_closure0() {
-    },
-    main_closure1: function main_closure1() {
     }
   };
   var holders = [C, H, J, P, W, Y];
@@ -2416,7 +2411,7 @@
           error.$thrownJsError = this.ex;
       return error;
     },
-    $signature: 4
+    $signature: 3
   };
   H._StackTrace.prototype = {
     toString$0: function(_) {
@@ -2478,7 +2473,7 @@
     call$1: function(o) {
       return this.getTag(o);
     },
-    $signature: 4
+    $signature: 3
   };
   H.initHooks_closure0.prototype = {
     call$2: function(o, tag) {
@@ -2499,7 +2494,7 @@
       t1.storedCallback = null;
       f.call$0();
     },
-    $signature: 5
+    $signature: 4
   };
   P._AsyncRun__initializeScheduleImmediate_closure.prototype = {
     call$1: function(callback) {
@@ -2687,7 +2682,7 @@
       t1._state = 0;
       t1._complete$1(value);
     },
-    $signature: 5
+    $signature: 4
   };
   P._Future__chainForeignFuture_closure0.prototype = {
     call$2: function(error, stackTrace) {
@@ -3136,28 +3131,15 @@
       H.interceptedTypeCheck(e, "$isMouseEvent");
       return Y.drawROC($.ctx);
     },
-    $signature: 2
+    $signature: 5
   };
   Y.main_closure0.prototype = {
-    call$1: function(e) {
-      var t1;
-      H.interceptedTypeCheck(e, "$isMouseEvent");
-      t1 = $.ctx;
-      t1.clearRect(0, 0, 300, 200);
-      t1.font = "30px Arial";
-      t1.strokeStyle = "rgb(255, 0, 0)";
-      t1.strokeText("\u8acb\u756b\u51fa\u7f8e\u570b\u570b\u65d7", 50, 75);
-      return;
-    },
-    $signature: 2
-  };
-  Y.main_closure1.prototype = {
     call$1: function(e) {
       H.interceptedTypeCheck(e, "$isMouseEvent");
       $.ctx.clearRect(0, 0, 300, 200);
       return;
     },
-    $signature: 2
+    $signature: 5
   };
   (function aliases() {
     var _ = J.Interceptor.prototype;
@@ -3168,9 +3150,9 @@
   (function installTearOffs() {
     var _static_1 = hunkHelpers._static_1,
       _static_0 = hunkHelpers._static_0;
-    _static_1(P, "async__AsyncRun__scheduleImmediateJsOverride$closure", "_AsyncRun__scheduleImmediateJsOverride", 3);
-    _static_1(P, "async__AsyncRun__scheduleImmediateWithSetImmediate$closure", "_AsyncRun__scheduleImmediateWithSetImmediate", 3);
-    _static_1(P, "async__AsyncRun__scheduleImmediateWithTimer$closure", "_AsyncRun__scheduleImmediateWithTimer", 3);
+    _static_1(P, "async__AsyncRun__scheduleImmediateJsOverride$closure", "_AsyncRun__scheduleImmediateJsOverride", 2);
+    _static_1(P, "async__AsyncRun__scheduleImmediateWithSetImmediate$closure", "_AsyncRun__scheduleImmediateWithSetImmediate", 2);
+    _static_1(P, "async__AsyncRun__scheduleImmediateWithTimer$closure", "_AsyncRun__scheduleImmediateWithTimer", 2);
     _static_0(P, "async___startMicrotaskLoop$closure", "_startMicrotaskLoop", 1);
   })();
   (function inheritance() {
@@ -3183,7 +3165,7 @@
     _inherit(J.JSUnmodifiableArray, J.JSArray);
     _inheritMany(J.JSNumber, [J.JSInt, J.JSDouble]);
     _inheritMany(P.Error, [H.NullError, H.JsNoSuchMethodError, H.UnknownJsTypeError, H.TypeErrorImplementation, H.RuntimeError, P.AssertionError, P.NullThrownError, P.ArgumentError, P.UnsupportedError, P.UnimplementedError, P.ConcurrentModificationError, P.CyclicInitializationError]);
-    _inheritMany(H.Closure, [H.unwrapException_saveStackTrace, H.TearOffClosure, H.initHooks_closure, H.initHooks_closure0, H.initHooks_closure1, P._AsyncRun__initializeScheduleImmediate_internalCallback, P._AsyncRun__initializeScheduleImmediate_closure, P._AsyncRun__scheduleImmediateJsOverride_internalCallback, P._AsyncRun__scheduleImmediateWithSetImmediate_internalCallback, P._TimerImpl_internalCallback, P._Future__addListener_closure, P._Future__prependListeners_closure, P._Future__chainForeignFuture_closure, P._Future__chainForeignFuture_closure0, P._Future__chainForeignFuture_closure1, P._Future__propagateToListeners_handleWhenCompleteCallback, P._Future__propagateToListeners_handleWhenCompleteCallback_closure, P._Future__propagateToListeners_handleValueCallback, P._Future__propagateToListeners_handleError, P.Stream_length_closure, P.Stream_length_closure0, P._rootHandleUncaughtError_closure, P._RootZone_bindCallback_closure, P._RootZone_bindCallbackGuarded_closure, P._RootZone_bindUnaryCallbackGuarded_closure, W._EventStreamSubscription_closure, Y.main_closure, Y.main_closure0, Y.main_closure1]);
+    _inheritMany(H.Closure, [H.unwrapException_saveStackTrace, H.TearOffClosure, H.initHooks_closure, H.initHooks_closure0, H.initHooks_closure1, P._AsyncRun__initializeScheduleImmediate_internalCallback, P._AsyncRun__initializeScheduleImmediate_closure, P._AsyncRun__scheduleImmediateJsOverride_internalCallback, P._AsyncRun__scheduleImmediateWithSetImmediate_internalCallback, P._TimerImpl_internalCallback, P._Future__addListener_closure, P._Future__prependListeners_closure, P._Future__chainForeignFuture_closure, P._Future__chainForeignFuture_closure0, P._Future__chainForeignFuture_closure1, P._Future__propagateToListeners_handleWhenCompleteCallback, P._Future__propagateToListeners_handleWhenCompleteCallback_closure, P._Future__propagateToListeners_handleValueCallback, P._Future__propagateToListeners_handleError, P.Stream_length_closure, P.Stream_length_closure0, P._rootHandleUncaughtError_closure, P._RootZone_bindCallback_closure, P._RootZone_bindCallbackGuarded_closure, P._RootZone_bindUnaryCallbackGuarded_closure, W._EventStreamSubscription_closure, Y.main_closure, Y.main_closure0]);
     _inheritMany(H.TearOffClosure, [H.StaticClosure, H.BoundClosure]);
     _inherit(H._AssertionError, P.AssertionError);
     _inherit(P._RootZone, P._Zone);
@@ -3330,7 +3312,7 @@
 ;
     C.C__RootZone = new P._RootZone();
   })();
-  var init = {mangledGlobalNames: {int: "int", double: "double", num: "num", String: "String", bool: "bool", Null: "Null", List: "List"}, mangledNames: {}, getTypeFromName: getGlobalFromName, metadata: [], types: [{func: 1, ret: P.Null}, {func: 1, ret: -1}, {func: 1, ret: -1, args: [W.MouseEvent]}, {func: 1, ret: -1, args: [{func: 1, ret: -1}]}, {func: 1, args: [,]}, {func: 1, ret: P.Null, args: [,]}, {func: 1, args: [, P.String]}, {func: 1, args: [P.String]}, {func: 1, ret: P.Null, args: [{func: 1, ret: -1}]}, {func: 1, ret: P.Null, args: [,], opt: [P.StackTrace]}, {func: 1, ret: [P._Future,,], args: [,]}, {func: 1, args: [W.Event]}], interceptorsByTag: null, leafTags: null};
+  var init = {mangledGlobalNames: {int: "int", double: "double", num: "num", String: "String", bool: "bool", Null: "Null", List: "List"}, mangledNames: {}, getTypeFromName: getGlobalFromName, metadata: [], types: [{func: 1, ret: P.Null}, {func: 1, ret: -1}, {func: 1, ret: -1, args: [{func: 1, ret: -1}]}, {func: 1, args: [,]}, {func: 1, ret: P.Null, args: [,]}, {func: 1, ret: -1, args: [W.MouseEvent]}, {func: 1, args: [, P.String]}, {func: 1, args: [P.String]}, {func: 1, ret: P.Null, args: [{func: 1, ret: -1}]}, {func: 1, ret: P.Null, args: [,], opt: [P.StackTrace]}, {func: 1, ret: [P._Future,,], args: [,]}, {func: 1, args: [W.Event]}], interceptorsByTag: null, leafTags: null};
   (function staticFields() {
     $.Closure_functionCounter = 0;
     $.BoundClosure_selfFieldNameCache = null;
