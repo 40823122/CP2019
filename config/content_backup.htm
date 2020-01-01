@@ -152,8 +152,41 @@ document.getElementById("iframe").height = 600 ;
 <!-- 取 Dart 程式的按鈕 -->
 <h4>Html 程式</h4>
 <p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button></p>
-<p><button onclick="getHtmlDart('usa_flag')">美國國旗</button><button onclick="getHtmlDart('jp_flag')">日本國旗</button><button onclick="getHtmlDart('fr-flag')">法國國旗</button><button onclick="getHtmlDart('ru-flag')">俄羅斯國旗</button><button onclick="getHtmlDart('Germany-flag')">德國國旗</button><button onclick="getHtmlDart('Netherlands-flag')">荷蘭國旗</button></p>
+<p><button onclick="getHtmlDart('usa_flag')">美國國旗</button><button onclick="getHtmlDart('jp_flag')">日本國旗</button><button onclick="getHtmlDart('fr-flag')">法國國旗</button><button onclick="getHtmlDart('ru-flag')">俄羅斯國旗</button><button onclick="getHtmlDart('Germany-flag')">德國國旗</button><button onclick="getHtmlDart('Netherlands-flag')">荷蘭國旗</button><button onclick="getHtmlDart('uk-flag')">英國國旗</button></p>
 <p><!-- 內建放入的 Dart 原始碼 --></p>
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
 <p><br/><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823122&amp;gh_repo=CP2019&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p>
-<h1>w17</h1>
+<h1>重量</h1>
+<p>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823122&gh_repo=CP2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823122&gh_repo=CP2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823122&gh_repo=CP2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+</p>
+<!-- 取 Dart 程式的按鈕 -->
+<h4>Html 程式</h4>
+<p><!-- 內建放入的 Dart 原始碼 --></p>
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><br/><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823122&amp;gh_repo=CP2019&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p><h1>w17</h1>
