@@ -151,7 +151,37 @@ init_mathjax();
         </header>
     <div id="tipue_search_content">dart << <a href='dart.html'>Previous</a> <br /><h1>亂數分主流程圖</h1>
 <p><img alt="" height="569" src="./../images/擷取.PNG" width="562"/></p>
-<p></p><br />dart << <a href='dart.html'>Previous</a> </div>
+<p>DART程式</p>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823122&gh_repo=CP2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823122&gh_repo=CP2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823122&gh_repo=CP2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 -->
+<p><button onclick="getDart('Random grouping')">亂數分組</button></p>
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823122&amp;gh_repo=CP2019&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p><br />dart << <a href='dart.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
