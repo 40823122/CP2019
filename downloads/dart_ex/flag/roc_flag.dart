@@ -16,7 +16,7 @@ void main() {
   canvas = querySelector('#canvas');
   ctx = canvas.getContext('2d');
 
- 
+   querySelector("#usa").onClick.listen((e) => drawUSA(ctx));
   querySelector("#fr").onClick.listen((e) => drawFR(ctx));
   querySelector("#jp").onClick.listen((e) => drawJP(ctx));
   querySelector("#roc").onClick.listen((e) => drawROC(ctx));
@@ -25,7 +25,46 @@ void main() {
   querySelector("#ge").onClick.listen((e) => drawGE(ctx));
   querySelector("#uk").onClick.listen((e) => drawUK(ctx));
   querySelector("#button").onClick.listen((e) => clearCanvas());
+
 }
+void drawUSA(ctx){
+
+  ctx.clearRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = 'rgb(255, 0, 0)';
+  ctx.fillRect(0, 0, flag_w, flag_h);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 15.4, flag_w / 1, flag_h / 13);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 46.2, flag_w / 1, flag_h / 13);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 77.2, flag_w / 1, flag_h / 13);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 108.0, flag_w / 1, flag_h / 13);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 138.8, flag_w / 1, flag_h / 13);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 169.6, flag_w / 1, flag_h / 13);
+  ctx.fillStyle = 'rgb(255, 255, 255)';
+  ctx.fillRect(0, 200.4, flag_w / 1, flag_h / 13);
+  ctx.fillStyle = 'rgb(0, 0, 150)';
+  ctx.fillRect(0, 0, flag_w / 2, flag_h / 1.9);
+    num b = flag_h/18;
+  ctx.font = "10px Arial";
+  ctx.strokeStyle = 'rgb(255, 255, 255)';
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36,12);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*2);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*3);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*4);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*5);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*6);
+  ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*7);
+   ctx.strokeText("✮      ✮      ✮      ✮      ✮", flag_w / 14, b*8);
+   ctx.strokeText("✮      ✮      ✮      ✮      ✮      ✮", flag_w / 36, b*9);
+
+
+}
+
+
 void drawFR(ctx){
   ctx.clearRect(0, 0, flag_w, flag_h);
   ctx.fillStyle = '#EF4135';

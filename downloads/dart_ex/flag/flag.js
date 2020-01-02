@@ -2180,30 +2180,33 @@
         t2 = H.interceptedTypeCheck(t1.querySelector("#canvas"), "$isCanvasElement");
       $.canvas = t2;
       $.ctx = H.interceptedTypeCheck((t2 && C.CanvasElement_methods).getContext$1(t2, "2d"), "$isCanvasRenderingContext2D");
-      t2 = J.get$onClick$x(t1.querySelector("#fr"));
+      t2 = J.get$onClick$x(t1.querySelector("#usa"));
       t3 = H.getTypeArgumentByIndex(t2, 0);
       W._EventStreamSubscription$(t2._target, t2._eventType, H.functionTypeCheck(new Y.main_closure(), {func: 1, ret: -1, args: [t3]}), false, t3);
-      t3 = J.get$onClick$x(t1.querySelector("#jp"));
+      t3 = J.get$onClick$x(t1.querySelector("#fr"));
       t2 = H.getTypeArgumentByIndex(t3, 0);
       W._EventStreamSubscription$(t3._target, t3._eventType, H.functionTypeCheck(new Y.main_closure0(), {func: 1, ret: -1, args: [t2]}), false, t2);
-      t2 = J.get$onClick$x(t1.querySelector("#roc"));
+      t2 = J.get$onClick$x(t1.querySelector("#jp"));
       t3 = H.getTypeArgumentByIndex(t2, 0);
       W._EventStreamSubscription$(t2._target, t2._eventType, H.functionTypeCheck(new Y.main_closure1(), {func: 1, ret: -1, args: [t3]}), false, t3);
-      t3 = J.get$onClick$x(t1.querySelector("#ru"));
+      t3 = J.get$onClick$x(t1.querySelector("#roc"));
       t2 = H.getTypeArgumentByIndex(t3, 0);
       W._EventStreamSubscription$(t3._target, t3._eventType, H.functionTypeCheck(new Y.main_closure2(), {func: 1, ret: -1, args: [t2]}), false, t2);
-      t2 = J.get$onClick$x(t1.querySelector("#ne"));
+      t2 = J.get$onClick$x(t1.querySelector("#ru"));
       t3 = H.getTypeArgumentByIndex(t2, 0);
       W._EventStreamSubscription$(t2._target, t2._eventType, H.functionTypeCheck(new Y.main_closure3(), {func: 1, ret: -1, args: [t3]}), false, t3);
-      t3 = J.get$onClick$x(t1.querySelector("#ge"));
+      t3 = J.get$onClick$x(t1.querySelector("#ne"));
       t2 = H.getTypeArgumentByIndex(t3, 0);
       W._EventStreamSubscription$(t3._target, t3._eventType, H.functionTypeCheck(new Y.main_closure4(), {func: 1, ret: -1, args: [t2]}), false, t2);
-      t2 = J.get$onClick$x(t1.querySelector("#uk"));
+      t2 = J.get$onClick$x(t1.querySelector("#ge"));
       t3 = H.getTypeArgumentByIndex(t2, 0);
       W._EventStreamSubscription$(t2._target, t2._eventType, H.functionTypeCheck(new Y.main_closure5(), {func: 1, ret: -1, args: [t3]}), false, t3);
+      t3 = J.get$onClick$x(t1.querySelector("#uk"));
+      t2 = H.getTypeArgumentByIndex(t3, 0);
+      W._EventStreamSubscription$(t3._target, t3._eventType, H.functionTypeCheck(new Y.main_closure6(), {func: 1, ret: -1, args: [t2]}), false, t2);
       t1 = J.get$onClick$x(t1.querySelector("#button"));
-      t3 = H.getTypeArgumentByIndex(t1, 0);
-      W._EventStreamSubscription$(t1._target, t1._eventType, H.functionTypeCheck(new Y.main_closure6(), {func: 1, ret: -1, args: [t3]}), false, t3);
+      t2 = H.getTypeArgumentByIndex(t1, 0);
+      W._EventStreamSubscription$(t1._target, t1._eventType, H.functionTypeCheck(new Y.main_closure7(), {func: 1, ret: -1, args: [t2]}), false, t2);
     },
     drawROC: function(ctx) {
       var angle, i, t1, t2, toX, toY;
@@ -2259,6 +2262,8 @@
     main_closure5: function main_closure5() {
     },
     main_closure6: function main_closure6() {
+    },
+    main_closure7: function main_closure7() {
     }
   };
   var holders = [C, H, J, P, W, Y];
@@ -3156,6 +3161,48 @@
   };
   Y.main_closure.prototype = {
     call$1: function(e) {
+      var t1,
+        _s18_ = "rgb(255, 255, 255)",
+        _s36_ = "\u272e      \u272e      \u272e      \u272e      \u272e      \u272e",
+        _s29_ = "\u272e      \u272e      \u272e      \u272e      \u272e";
+      H.interceptedTypeCheck(e, "$isMouseEvent");
+      t1 = $.ctx;
+      t1.clearRect(0, 0, 300, 200);
+      t1.fillStyle = "rgb(255, 0, 0)";
+      t1.fillRect(0, 0, 300, 200);
+      t1.fillStyle = _s18_;
+      t1.fillRect(0, 15.4, 300, 15.384615384615385);
+      t1.fillStyle = _s18_;
+      t1.fillRect(0, 46.2, 300, 15.384615384615385);
+      t1.fillStyle = _s18_;
+      t1.fillRect(0, 77.2, 300, 15.384615384615385);
+      t1.fillStyle = _s18_;
+      t1.fillRect(0, 108, 300, 15.384615384615385);
+      t1.fillStyle = _s18_;
+      t1.fillRect(0, 138.8, 300, 15.384615384615385);
+      t1.fillStyle = _s18_;
+      t1.fillRect(0, 169.6, 300, 15.384615384615385);
+      t1.fillStyle = _s18_;
+      t1.fillRect(0, 200.4, 300, 15.384615384615385);
+      t1.fillStyle = "rgb(0, 0, 150)";
+      t1.fillRect(0, 0, 150, 105.26315789473685);
+      t1.font = "10px Arial";
+      t1.strokeStyle = _s18_;
+      t1.strokeText(_s36_, 8.333333333333334, 12);
+      t1.strokeText(_s29_, 21.428571428571427, 22.22222222222222);
+      t1.strokeText(_s36_, 8.333333333333334, 33.33333333333333);
+      t1.strokeText(_s29_, 21.428571428571427, 44.44444444444444);
+      t1.strokeText(_s36_, 8.333333333333334, 55.55555555555556);
+      t1.strokeText(_s29_, 21.428571428571427, 66.66666666666666);
+      t1.strokeText(_s36_, 8.333333333333334, 77.77777777777777);
+      t1.strokeText(_s29_, 21.428571428571427, 88.88888888888889);
+      t1.strokeText(_s36_, 8.333333333333334, 100);
+      return;
+    },
+    $signature: 0
+  };
+  Y.main_closure0.prototype = {
+    call$1: function(e) {
       var t1;
       H.interceptedTypeCheck(e, "$isMouseEvent");
       t1 = $.ctx;
@@ -3170,7 +3217,7 @@
     },
     $signature: 0
   };
-  Y.main_closure0.prototype = {
+  Y.main_closure1.prototype = {
     call$1: function(e) {
       var t1;
       H.interceptedTypeCheck(e, "$isMouseEvent");
@@ -3188,14 +3235,14 @@
     },
     $signature: 0
   };
-  Y.main_closure1.prototype = {
+  Y.main_closure2.prototype = {
     call$1: function(e) {
       H.interceptedTypeCheck(e, "$isMouseEvent");
       return Y.drawROC($.ctx);
     },
     $signature: 0
   };
-  Y.main_closure2.prototype = {
+  Y.main_closure3.prototype = {
     call$1: function(e) {
       var t1;
       H.interceptedTypeCheck(e, "$isMouseEvent");
@@ -3211,7 +3258,7 @@
     },
     $signature: 0
   };
-  Y.main_closure3.prototype = {
+  Y.main_closure4.prototype = {
     call$1: function(e) {
       var t1;
       H.interceptedTypeCheck(e, "$isMouseEvent");
@@ -3227,7 +3274,7 @@
     },
     $signature: 0
   };
-  Y.main_closure4.prototype = {
+  Y.main_closure5.prototype = {
     call$1: function(e) {
       var t1;
       H.interceptedTypeCheck(e, "$isMouseEvent");
@@ -3243,7 +3290,7 @@
     },
     $signature: 0
   };
-  Y.main_closure5.prototype = {
+  Y.main_closure6.prototype = {
     call$1: function(e) {
       var t1, _s4_ = "#fff",
         _s7_ = "#c9072a";
@@ -3306,7 +3353,7 @@
     },
     $signature: 0
   };
-  Y.main_closure6.prototype = {
+  Y.main_closure7.prototype = {
     call$1: function(e) {
       H.interceptedTypeCheck(e, "$isMouseEvent");
       $.ctx.clearRect(0, 0, 300, 200);
@@ -3338,7 +3385,7 @@
     _inherit(J.JSUnmodifiableArray, J.JSArray);
     _inheritMany(J.JSNumber, [J.JSInt, J.JSDouble]);
     _inheritMany(P.Error, [H.NullError, H.JsNoSuchMethodError, H.UnknownJsTypeError, H.TypeErrorImplementation, H.RuntimeError, P.AssertionError, P.NullThrownError, P.ArgumentError, P.UnsupportedError, P.UnimplementedError, P.ConcurrentModificationError, P.CyclicInitializationError]);
-    _inheritMany(H.Closure, [H.unwrapException_saveStackTrace, H.TearOffClosure, H.initHooks_closure, H.initHooks_closure0, H.initHooks_closure1, P._AsyncRun__initializeScheduleImmediate_internalCallback, P._AsyncRun__initializeScheduleImmediate_closure, P._AsyncRun__scheduleImmediateJsOverride_internalCallback, P._AsyncRun__scheduleImmediateWithSetImmediate_internalCallback, P._TimerImpl_internalCallback, P._Future__addListener_closure, P._Future__prependListeners_closure, P._Future__chainForeignFuture_closure, P._Future__chainForeignFuture_closure0, P._Future__chainForeignFuture_closure1, P._Future__propagateToListeners_handleWhenCompleteCallback, P._Future__propagateToListeners_handleWhenCompleteCallback_closure, P._Future__propagateToListeners_handleValueCallback, P._Future__propagateToListeners_handleError, P.Stream_length_closure, P.Stream_length_closure0, P._rootHandleUncaughtError_closure, P._RootZone_bindCallback_closure, P._RootZone_bindCallbackGuarded_closure, P._RootZone_bindUnaryCallbackGuarded_closure, W._EventStreamSubscription_closure, Y.main_closure, Y.main_closure0, Y.main_closure1, Y.main_closure2, Y.main_closure3, Y.main_closure4, Y.main_closure5, Y.main_closure6]);
+    _inheritMany(H.Closure, [H.unwrapException_saveStackTrace, H.TearOffClosure, H.initHooks_closure, H.initHooks_closure0, H.initHooks_closure1, P._AsyncRun__initializeScheduleImmediate_internalCallback, P._AsyncRun__initializeScheduleImmediate_closure, P._AsyncRun__scheduleImmediateJsOverride_internalCallback, P._AsyncRun__scheduleImmediateWithSetImmediate_internalCallback, P._TimerImpl_internalCallback, P._Future__addListener_closure, P._Future__prependListeners_closure, P._Future__chainForeignFuture_closure, P._Future__chainForeignFuture_closure0, P._Future__chainForeignFuture_closure1, P._Future__propagateToListeners_handleWhenCompleteCallback, P._Future__propagateToListeners_handleWhenCompleteCallback_closure, P._Future__propagateToListeners_handleValueCallback, P._Future__propagateToListeners_handleError, P.Stream_length_closure, P.Stream_length_closure0, P._rootHandleUncaughtError_closure, P._RootZone_bindCallback_closure, P._RootZone_bindCallbackGuarded_closure, P._RootZone_bindUnaryCallbackGuarded_closure, W._EventStreamSubscription_closure, Y.main_closure, Y.main_closure0, Y.main_closure1, Y.main_closure2, Y.main_closure3, Y.main_closure4, Y.main_closure5, Y.main_closure6, Y.main_closure7]);
     _inheritMany(H.TearOffClosure, [H.StaticClosure, H.BoundClosure]);
     _inherit(H._AssertionError, P.AssertionError);
     _inherit(P._RootZone, P._Zone);
