@@ -50,7 +50,7 @@
 ### KMOLab
 
 &lt;small&gt;
-Created by [40823122](https://40823122.github.io/cp2019/content/index.html/)
+Created by [40823122](https://40823122.github.io/cp2019/)
 &lt;/small&gt;
 
 [CMSimfly 網誌](./../blog/index.html)
