@@ -24,6 +24,9 @@
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
+<v t="leo.20200108205023.1"><vh>快捷鍵</vh>
+<v t="leo.20200108205023.2"><vh>投影片快捷鍵</vh></v>
+</v>
 <v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
 <v t="leo.20180902120523.14"><vh>導入數學符號與方程式</vh>
 <v t="leo.20180902120523.15"><vh>LaTeX 格式方程式</vh></v>
@@ -66,8 +69,9 @@ Created by [40823122](https://40823122.github.io/cp2019/)
 
 						
 </t>
-<t tx="leo.20180902120523.12"># 溫度轉換
-&lt;iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=40823122&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/temperature-1&amp;theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+<t tx="leo.20180902120523.12">## 計算機程式課程目錄
+
+* [溫度轉換](https://40823122.github.io/cp2019/reveal/index.html#/2)
 </t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
@@ -316,5 +320,17 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
+<t tx="leo.20200108205023.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200108205023.2"># 溫度轉換
+&lt;iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=40823122&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/temperature-1&amp;theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+</t>
 </tnodes>
 </leo_file>
