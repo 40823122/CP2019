@@ -24,8 +24,10 @@
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
-<v t="leo.20200108205023.1"><vh>快捷鍵</vh>
-<v t="leo.20200108205023.2"><vh>投影片快捷鍵</vh></v>
+<v t="leo.20200108205023.1"><vh>程式</vh>
+<v t="leo.20200108205023.2"><vh>1</vh></v>
+<v t="leo.20200108205606.1"><vh>2</vh></v>
+<v t="leo.20200108205607.1"><vh>3</vh></v>
 </v>
 <v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
 <v t="leo.20180902120523.14"><vh>導入數學符號與方程式</vh>
@@ -329,8 +331,14 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20200108205023.2"># 溫度轉換
+<t tx="leo.20200108205023.2">    # 溫度轉換
 &lt;iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=40823122&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/temperature-1&amp;theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-</t>
+ </t>
+<t tx="leo.20200108205606.1">    # 重量轉換
+&lt;iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=40823122&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/weight&amp;theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+ </t>
+<t tx="leo.20200108205607.1">    # 溫度轉換
+&lt;iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=40823122&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/temperature-1&amp;theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+ </t>
 </tnodes>
 </leo_file>
