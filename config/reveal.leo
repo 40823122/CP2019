@@ -66,15 +66,8 @@ Created by [40823122](https://40823122.github.io/cp2019/)
 
 						
 </t>
-<t tx="leo.20180902120523.12"># 投影片快捷鍵
-
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
-&lt;iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=a40823112&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/tp-html&amp;theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+<t tx="leo.20180902120523.12"># 溫度轉換
+&lt;iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=a40823122&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/temperature-1l&amp;theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 </t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
